@@ -1,0 +1,21 @@
+{% extends 'parent.html' %}
+{% block content %}
+
+<h2>Wymien złotówki na zagraniczne waluty:</h2>
+    <form method="post" action="/">
+            <label for="waluta" id="waluta_intro">Waluta, którą chcesz kupić</label>
+            <select name="waluta" id="waluta">
+                {% for kod in kody %}
+                <option value={{kod}}>{{kod}}</option>
+                {% endfor %}
+            </select>
+            <input type="submit" id="submit" value="Submit">
+            <br>
+            <label for="kwota" id="kwota_intro">Kwota</label>
+            <input type="text" name="kwota" id="kwota" pattern="^[0.0-9.0]*$">
+            <br>
+            <label for="out" id="wynik_intro">Dostaniesz </label>
+            <output type="text" name="wynik" id="wynik">{{wynik}}</output>
+    </form>
+
+{% endblock %}

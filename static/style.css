@@ -1,0 +1,33 @@
+h1 {
+    font-size: 65px;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+#waluta_intro {
+    font-size: 25px;
+}
+#waluta {
+    font-size: 25px;
+}
+
+#submit {
+    font-size: 25px;
+}
+
+#kwota_intro {
+    font-size: 25px;
+}
+#kwota {
+    font-size: 25px;
+}
+
+#wynik_intro {
+    font-size: 25px;
+}
+
+#wynik {
+    font-size: 25px;
+}
